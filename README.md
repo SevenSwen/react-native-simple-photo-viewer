@@ -34,20 +34,10 @@
       compile project(':react-native-simple-photo-viewer')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNSimplePhotoViewer.sln` in `node_modules/react-native-simple-photo-viewer/windows/RNSimplePhotoViewer.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Cl.Json.RNSimplePhotoViewer;` to the usings at the top of the file
-  - Add `new RNSimplePhotoViewerPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
 ```javascript
 import RNSimplePhotoViewer from 'react-native-simple-photo-viewer';
 
-// TODO: What do with the module?
 RNSimplePhotoViewer;
 ```
   
