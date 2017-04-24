@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.4",
-    "react-native-simple-photo-viewer": "file:///Users/user/Documents/Tikhonenko/Projects/_ReactNativeModules/react-native-simple-photo-viewer"
+    "react-native-simple-photo-viewer": "git@github.com:SevenSwen/react-native-simple-photo-viewer.git"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",
