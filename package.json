@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-smart-photo-viewer",
+  "name": "react-native-simple-photo-viewer",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,5 @@
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "^0.43.3"
-
   }
 }
