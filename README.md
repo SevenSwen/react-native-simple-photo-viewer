@@ -5,7 +5,7 @@
 
 #### iOS
 
-<url>
+![](https://github.com/SevenSwen/react-native-simple-photo-viewer/blob/master/SimplePhotoViewer.gif)
 
 ## Getting started
 
