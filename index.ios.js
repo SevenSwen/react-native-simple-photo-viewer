@@ -6,14 +6,9 @@ import ReactNative, {
 const resolveAssetSource = require('../react-native/Libraries/Image/resolveAssetSource');
 
 class SimplePhotoView extends Component {
-    _onDidExit() {
-        if (!this.props.onDidExit) {
-            return;
-        }
-
-        this.props.onDidExit();
-    }
-
+    static defaultProps = {
+        onDidExit: () => {}
+    };
     render() {
         const source = resolveAssetSource(this.props.source) || { uri: undefined, width: undefined, height: undefined };
         let sources;
@@ -32,7 +27,7 @@ class SimplePhotoView extends Component {
             <RNSimplePhotoView
                 {...this.props}
                 source={sources}
-                onDidExit={this._onDidExit.bind(this)}
+                onDidExit={this.props.onDidExit}
             />
         );
     }

@@ -38,39 +38,39 @@ export default class testSimplePhotoViewer extends Component {
         const imageLenna_vertical = require("./Lenna_vertical.jpg");
 
         return (
-        <View
-            style={styles.container}
-            onLayout={this.getNewDimensions}>
-            <TouchableOpacity onPress={() => this._onPressButton(imageLenna)}>
-                <Image
-                    source={imageLenna}
-                    style={styles.image}
-                />
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => this._onPressButton(imageLenna_horizontal)}>
-                <Image
-                    source={imageLenna_horizontal}
-                    style={styles.image}
-                />
-            </TouchableOpacity>
-            <TouchableOpacity onPress={() => this._onPressButton(imageLenna_vertical)}>
-                <Image
-                    source={imageLenna_vertical}
-                    style={styles.image}
-                />
-            </TouchableOpacity>
-            {this.state.openedImage &&
-                <SimplePhotoView
-                    style={[styles.photoView,
-                            {width: this.state.pageWidth,
-                            height: this.state.pageHeight}]}
-                    source={this.state.openedImage}
-                    onDidExit={() => {
-                        this.setState({openedImage: null});
-                    }}
-                />
-            }
-        </View>
+            <View
+                style={styles.container}
+                onLayout={this.getNewDimensions}>
+                <TouchableOpacity onPress={() => this._onPressButton(imageLenna)}>
+                    <Image
+                        source={imageLenna}
+                        style={styles.image}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => this._onPressButton(imageLenna_horizontal)}>
+                    <Image
+                        source={imageLenna_horizontal}
+                        style={styles.image}
+                    />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => this._onPressButton(imageLenna_vertical)}>
+                    <Image
+                        source={imageLenna_vertical}
+                        style={styles.image}
+                    />
+                </TouchableOpacity>
+                {this.state.openedImage &&
+                    <SimplePhotoView
+                        style={[styles.photoView,
+                                {width: this.state.pageWidth,
+                                height: this.state.pageHeight}]}
+                        source={this.state.openedImage}
+                        onDidExit={() => {
+                            this.setState({openedImage: null});
+                        }}
+                    />
+                }
+            </View>
         )
     }
 }
